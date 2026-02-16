@@ -5,3 +5,5 @@ requests
 aiohttp
 rich
 textual
+python-telegram-bot
+playwright

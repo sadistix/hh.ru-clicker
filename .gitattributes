@@ -1,0 +1,22 @@
+# Автоматическое определение типов файлов
+* text=auto
+
+# Python файлы
+*.py text eol=lf
+*.pyw text eol=lf
+
+# Shell скрипты
+*.sh text eol=lf
+
+# Batch файлы
+*.bat text eol=crlf
+
+# Конфигурационные файлы
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Игнорировать изменения в whitespace для некоторых файлов
+*.py linguist-generated=false

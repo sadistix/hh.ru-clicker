@@ -1,5 +1,18 @@
-# Данные пользователя
-data/
+# Данные пользователя и конфигурация
+data/*
+!data/.gitkeep
+
+# Конфигурационные файлы с токенами
+.env
+.env.local
+.env.*.local
+config.json
+secrets.json
+
+# Логи
+*.log
+bot.log
+*.log.*
 
 # Python
 __pycache__/
@@ -10,6 +23,17 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Виртуальное окружение
+venv/
+env/
+ENV/
+.venv
+virtualenv/
 
 # IDE
 .vscode/
@@ -17,10 +41,34 @@ build/
 *.swp
 *.swo
 *~
+.project
+.pydevproject
+.settings/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# Логи
-*.log
+# Playwright
+.playwright/
+
+# Временные файлы
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Личные данные и токены
+*_token*
+*_secret*
+*_key*
+*_password*
+*credentials*
+*private*
